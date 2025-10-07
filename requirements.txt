@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+httpx
+python-multipart        # file uploads
+aiofiles                # async file utilities
+pillow                  # image handling
+opencv-python-headless  # image preprocessing (headless best for servers)
+pytesseract             # OCR (you'll also need Tesseract installed on your system)
+sqlalchemy[asyncio]
+asyncpg                 # Postgres async driver
+redis
+celery[redis]           # optional for background tasks (or later use RQ)
+pgvector                # optional client for pgvector (DB extension)
